@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-
 import { cn } from "@finzo/ui";
 import { ThemeProvider, ThemeToggle } from "@finzo/ui/theme";
 import { Toaster } from "@finzo/ui/toast";
@@ -14,21 +13,21 @@ import { env } from "~/env";
 export const metadata: Metadata = {
   metadataBase: new URL(
     env.VERCEL_ENV === "production"
-      ? "https://turbo.t3.gg"
+      ? "https://finzo.co"
       : "http://localhost:3000",
   ),
-  title: "Create T3 Turbo",
-  description: "Simple monorepo with shared backend for web & mobile apps",
+  title: "Finzo",
+  description: "Finzo is a simple platform for managing your expenses",
   openGraph: {
-    title: "Create T3 Turbo",
-    description: "Simple monorepo with shared backend for web & mobile apps",
-    url: "https://create-t3-turbo.vercel.app",
-    siteName: "Create T3 Turbo",
+    title: "Finzo",
+    description: "Finzo is a simple platform for managing your expenses",
+    url: "https://finzo.co",
+    siteName: "Finzo",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@jullerino",
-    creator: "@jullerino",
+    site: "@danilomartinelli",
+    creator: "@danilomartinelli",
   },
 };
 
