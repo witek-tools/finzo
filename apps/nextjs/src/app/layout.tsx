@@ -23,6 +23,14 @@ export const metadata: Metadata = {
     description: "Finzo is a simple platform for managing your expenses",
     url: "https://finzo.co",
     siteName: "Finzo",
+    images: [
+      {
+        url: "https://finzo.co/og.png",
+        width: 1024,
+        height: 1024,
+        alt: "Finzo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
