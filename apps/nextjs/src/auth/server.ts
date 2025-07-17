@@ -17,8 +17,8 @@ export const auth = initAuth({
   baseUrl,
   productionUrl: `https://${env.VERCEL_PROJECT_PRODUCTION_URL ?? "www.finzo.co"}`,
   secret: env.AUTH_SECRET,
-  googleClientId: env.AUTH_GOOGLE_ID,
-  googleClientSecret: env.AUTH_GOOGLE_SECRET,
+  googleClientId: env.AUTH_GOOGLE_ID!,
+  googleClientSecret: env.AUTH_GOOGLE_SECRET!,
 });
 
 export const getSession = cache(async () =>
