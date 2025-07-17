@@ -13,7 +13,7 @@ import { env } from "~/env";
 export const metadata: Metadata = {
   metadataBase: new URL(
     env.VERCEL_ENV === "production"
-      ? "https://finzo.co"
+      ? "https://www.finzo.co"
       : "http://localhost:3000",
   ),
   title: "Finzo",
@@ -21,13 +21,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Finzo",
     description: "Finzo is a simple platform for managing your expenses",
-    url: "https://finzo.co",
+    url: "https://www.finzo.co",
     siteName: "Finzo",
     images: [
       {
-        url: "https://finzo.co/og.png",
-        width: 1024,
-        height: 1024,
+        url: "https://www.finzo.co/og.png",
+        width: 1200,
+        height: 630,
         alt: "Finzo",
       },
     ],

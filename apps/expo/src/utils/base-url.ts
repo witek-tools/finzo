@@ -17,7 +17,7 @@ export const getBaseUrl = () => {
   const localhost = debuggerHost?.split(":")[0];
 
   if (!localhost) {
-    return "https://finzo.co";
+    return "https://www.finzo.co";
   }
   return `http://${localhost}:3000`;
 };
